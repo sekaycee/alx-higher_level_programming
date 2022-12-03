@@ -1,7 +1,5 @@
 #include <stdio.h>
-#include <object.h>
 #include <Python.h>
-#include <listobject.h>
 
 /**
  * print_python_list_info - print some basic info about Python lists
@@ -9,13 +7,13 @@
  */
 void print_python_list_info(PyObject *p)
 {
-	int i, size, alloc;
+	int i, size;
+	PyListObject *alloc;
 
 	size = Py_SIZE(p);
 	alloc = ((PyListObject *)p)->allocated;
 	printf("[*] Size of the Python List = %d\n", size);
 	printf("[*] Allocated = %d\n", alloc);
-
 	for (i = 0; i < size; i++)
 	{
 		printf("Element %d: ", i);
