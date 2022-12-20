@@ -111,4 +111,5 @@ void print_python_list(PyObject *p)
 		if (PyFloat_Check(obj))
 			print_python_float(obj);
 	}
-	setbuf(stdout
+	setbuf(stdout, NULL)
+}
