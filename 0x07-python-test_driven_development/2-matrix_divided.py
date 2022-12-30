@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-divide the numbers of a matrix
+Define fuxnction that divide the numbers of a matrix
 """
 
 
@@ -25,26 +25,24 @@ def matrix_divided(matrix, div):
     if div == 0:
         raise ZeroDivisionError("division by zero")
 
-    msg_type = "matrix must be a matrix (list of lists) of integers/floats"
-
+    msg_t = "matrix must be a matrix (list of lists) of integers/floats"
     if not matrix or not isinstance(matrix, list):
-        raise TypeError(msg_type)
+        raise TypeError(msg_t)
 
-    len_e = 0
-    msg_size = "Each row of the matrix must have the same size"
+    el_len = 0
+    msg_s = "Each row of the matrix must have the same size"
+    for el in matrix:
+        if not el or not isinstance(el, list):
+            raise TypeError(msg_t)
 
-    for elems in matrix:
-        if not elems or not isinstance(elems, list):
-            raise TypeError(msg_type)
+        if el_len != 0 and len(el) != el_len:
+            raise TypeError(msg_s)
 
-        if len_e != 0 and len(elems) != len_e:
-            raise TypeError(msg_size)
-
-        for num in elems:
+        for num in el:
             if not type(num) in (int, float):
-                raise TypeError(msg_type)
+                raise TypeError(msg_t)
 
-        len_e = len(elems)
+        el_len = len(el)
 
     m = list(map(lambda x: list(map(lambda y: round(y / div, 2), x)), matrix))
     return (m)
