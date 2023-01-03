@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-import sys
 """
 Algorithm that resolves the N-Queen puzzle using backtracking
 """
@@ -48,7 +47,7 @@ def r_solve(q_arr, q_num):
         return
 
     q_arr[q_num] = -1
-    while((q_arr[q_num] < len(q_arr) - 1)):
+    while ((q_arr[q_num] < len(q_arr) - 1)):
         q_arr[q_num] += 1
         if is_safe(q_arr, q_num) is True:
             if q_num is not len(q_arr):
@@ -66,13 +65,15 @@ def solution(size):
 
 
 if __name__ == '__main__':
+    import sys
+
     if len(sys.argv) == 1 or len(sys.argv) > 2:
         print("Usage: nqueens N")
         sys.exit(1)
 
     try:
         size = int(sys.argv[1])
-    except:
+    except Exception:
         print("N must be a number")
         sys.exit(1)
 
