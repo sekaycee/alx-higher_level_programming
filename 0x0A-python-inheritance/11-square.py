@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+
+
+''' create class Square derived from class Rectangle '''
+
+
 Rectangle = __import__('9-rectangle').Rectangle
 
 

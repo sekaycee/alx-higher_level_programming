@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+''' define class BaseGeometry '''
+
+
 class BaseGeometry:
     ''' define the attributes of Geometric Shapes '''
     def area(self):

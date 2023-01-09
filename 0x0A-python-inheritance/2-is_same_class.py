@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+''' define a class checker function '''
+
+
 def is_same_class(obj, a_class):
     ''' return True/False if obj is a type of a_class
     Args:

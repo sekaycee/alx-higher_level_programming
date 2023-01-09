@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+''' check if an object is an instance of a given class or not '''
+
+
 def is_kind_of_class(obj, a_class):
     ''' return True/False if obj is an instance of a_class
     Args:
