@@ -12,4 +12,4 @@ class Square(Rectangle):
 
     def area(self):
         ''' return a string with the area '''
-        return super().area()
+        return (super().area())
