@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+''' create a class MyList derived from list '''
+
+
 class MyList(list):
     ''' inherit the attributes references of class list
     Args:
