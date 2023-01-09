@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-def add_attribute(obj, name, value):
+def add_attribute(obj, attr, value):
     ''' add a new attribute to an object
     Args:
         obj: object
@@ -10,4 +10,4 @@ def add_attribute(obj, name, value):
     '''
     if not hasattr(obj, "__dict__"):
         raise TypeError("can't add new attribute")
-    setattr(obj, name, value)
+    setattr(obj, attr, value)
