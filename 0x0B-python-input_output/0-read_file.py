@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-''' Module with function that reads from a file '''
+''' define function that reads from a file '''
 
 
 def read_file(filename=""):
