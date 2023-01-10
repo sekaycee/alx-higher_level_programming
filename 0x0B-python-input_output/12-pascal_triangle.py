@@ -10,7 +10,7 @@ def pascal_triangle(n):
         matrix: lists of integers representing the triangle
     '''
     matrix = [[1]]
-    while len(matrix) != n and n > 0:
+    while len(matrix) != n or n > 0:
         tri = matrix[-1]
         tmp = [1]
         for i in range(len(tri) - 1):
