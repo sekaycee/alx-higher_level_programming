@@ -89,10 +89,10 @@ class Rectangle(Base):
     def to_dictionary(self):
         ''' return a dictionary representation of this class '''
         return ({'x': getattr(self, "x"),
-                'y': getattr(self, "y"),
-                'id': getattr(self, "id"),
-                'height': getattr(self, "height"),
-                'width': getattr(self, "width")})
+                 'y': getattr(self, "y"),
+                 'id': getattr(self, "id"),
+                 'height': getattr(self, "height"),
+                 'width': getattr(self, "width")})
 
     @staticmethod
     def setter_validation(attribute, value):
