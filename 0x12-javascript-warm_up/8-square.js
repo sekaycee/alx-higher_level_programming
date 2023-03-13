@@ -4,8 +4,12 @@ if (!num) {
   console.log('Missing size');
 } else {
   for (let i = 0; i < num; i++) {
+    let tmp = '';
     for (let j = 0; j < num; j++) {
-      console.log('X');
+      tmp += 'X';
+      if (j === num - 1) {
+        console.log(tmp);
+      }
     }
   }
 }
