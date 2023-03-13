@@ -1,4 +1,4 @@
 #!/usr/bin/node
 exports.callMeMaybe = function (x, theFunction) {
-  theFunction.call(this, x + 1);
+  theFunction.call(this, x - 1);
 };
