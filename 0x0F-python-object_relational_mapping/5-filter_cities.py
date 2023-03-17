@@ -9,7 +9,7 @@ if __name__ == '__main__':
     cur = conn.cursor()
     cur.execute('SELECT cities.name FROM cities WHERE cities.state_id = \
                  (SELECT states.id FROM states WHERE states.name = (%s)) \
-                 GROUP BY cities ORDER BY cities.id ASC', (sys.argv[4],))
+                 GROUP BY states ORDER BY cities.id ASC', (sys.argv[4],))
 
     cities = cur.fetchall()
     print(', '.join([city for city in cities]))
