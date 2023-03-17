@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-''' Create the State "California" with the City "San Francisco" from a DB '''
+''' Create the State "California" with the City "San Francisco" to a DB '''
 import sys
 from relationship_state import Base, State
 from relationship_city import City
@@ -19,7 +19,6 @@ if __name__ == '__main__':
     new_city = City(name='San Francisco')
     new_state.cities.append(new_city)
 
-    session.add(new_state)
     sessio.add(new_city)
     session.commit()
     session.close()
