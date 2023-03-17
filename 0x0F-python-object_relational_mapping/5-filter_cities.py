@@ -16,7 +16,7 @@ if __name__ == '__main__':
         ORDER BY cities.id ASC', (sys.argv[4],))
     cities = cur.fetchall()
     for city in cities:
-        print(city)
+        print(city, end=', ')
 
     cur.close()
     conn.close()
