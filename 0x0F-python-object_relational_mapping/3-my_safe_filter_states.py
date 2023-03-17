@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-''' Take in arguments and display all values in the states table 
+''' Take in arguments and display all values in the states table
 from the database hbtn_0e_0_usa where name matches the argument
 '''
 import sys
