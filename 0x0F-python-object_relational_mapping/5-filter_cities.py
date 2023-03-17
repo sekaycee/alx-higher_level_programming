@@ -15,8 +15,7 @@ if __name__ == '__main__':
         ON states.id = cities.state_id WHERE states.name LIKE BINARY (%s) \
         ORDER BY cities.id ASC', (sys.argv[4],))
     cities = cur.fetchall()
-    for city in cities:
-        print(city, end=', ')
+    print(', '.join([city for city in cities]))
 
     cur.close()
     conn.close()
