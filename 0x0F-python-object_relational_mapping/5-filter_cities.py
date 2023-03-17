@@ -17,7 +17,14 @@ if __name__ == '__main__':
                  (sys.argv[4]))
 
     cities = cur.fetchall()
-    print(', '.join([city for city in cities]))
+    #print(', '.join([city for city in cities]))
+    end_str = ""
+    str_cities = ""
+    for row in table:
+        str_cities = str_cities + end_str + row[0]
+        end_str = ", "
+
+    print(str_cities)
 
     cur.close()
     conn.close()
