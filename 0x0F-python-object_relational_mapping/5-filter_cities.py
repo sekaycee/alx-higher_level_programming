@@ -9,8 +9,8 @@ if __name__ == '__main__':
 
     cur = conn.cursor()
     cur.execute('SELECT cities.id, cities.name, states.name \
-        FROM cities JOIN states ON cities.state_id = states.id \
-        WHERE states.name = "{}";'.format(sys.argv[4]))
+    FROM cities JOIN states ON cities.state_id = states.id \
+    WHERE states.name = "{}";'.format(sys.argv[4]))
 
     cities = cur.fetchall()
     print(", ".join([city[1] for city in cities]))
