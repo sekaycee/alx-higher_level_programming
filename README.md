@@ -1,4 +1,4 @@
-# Higher-level Programming - Python
+# Higher-level Programming
 Module of **High-level programming** and **Python**, completed during **Fullstack Software Engineering** program at **[ALX](https://www.alxafrica.com/)**
 
 ## Technologies
@@ -22,3 +22,6 @@ All of the following folders are projects done during the studies:
 | [`0x05-python-exceptions`](https://github.com/sekaycee/alx-higher_level_programming/tree/master/0x05-python-exceptions) | Aims to learn about exceptions, how to use them, how to use errors and how to raise them in **Python** |
 | [`0x06-python-exceptions`](https://github.com/sekaycee/alx-higher_level_programming/tree/master/0x06-python-classes) | Aims to learn about object oriented programming (OOP), classes, objects, instances, methods and attributes in **Python** |
 | [`0x07-python-test_driven_development`](https://github.com/sekaycee/alx-higher_level_programming/tree/master/0x07-python-test_driven_development) | Aims to learn about docstrings to create and implement tests in **Python** |
+
+## Authors
+Kay Cee <se.kaycee@gmail.com>
