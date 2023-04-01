@@ -1,4 +1,4 @@
-# Network 0
+# Network 1
 Project completed during **Software Engineering** program with **ALX**. Aims to learn about HTTP and HTTP cookies using Python's urllib, sys, and requests modules.
 
 ## Tools
