@@ -1,5 +1,5 @@
 # Network 1
-Project completed during **Software Engineering** program with **ALX**. Aims to learn about HTTP and HTTP cookies using Python's urllib, sys, and requests modules.
+Project completed during **Software Engineering** program with **ALX**. Aims to learn about HTTP and HTTP cookies using Python's urllib, sys, and requests modules
 
 ## Tools
 * Scripts are written with Bash5 and Python3
