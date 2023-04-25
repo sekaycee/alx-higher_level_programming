@@ -8,7 +8,7 @@ req.get(url, function (err, res, body) {
       req.get(characters[i], function (err, res, body) {
         if (!err) {
           console.log(JSON.parse(body).name);
-	}
+        }
       });
     }
   }
