@@ -1,7 +1,6 @@
 #!/usr/bin/node
 const req = require('request');
-
-req(process.argv[2], function (err, res, body) {
+req.get(process.argv[2], function (err, res, body) {
   if (!err) {
     const cTasks = {};
     const todos = JSON.parse(body);
